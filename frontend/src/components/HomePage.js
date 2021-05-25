@@ -15,6 +15,8 @@ import {
 } from "react-router-dom";
 
 import CreateClassroom from "./CreateClassroom";
+import JoinClassroom from './JoinClassroom'
+import Classroom from "./Classroom";
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -61,6 +63,13 @@ export default class HomePage extends Component {
         <Switch>
           <Route exact path="/" render={this.renderHomePage}></Route>
           <Route path="/create-classroom" component={CreateClassroom}></Route>
+          <Route path="/join-classroom" component={JoinClassroom}></Route>
+          <Route
+            path="/classroom/:id"
+            render={(props) => {
+              return <Classroom {...props} />;
+            }}
+          ></Route>
         </Switch>
       </Router>
     );
