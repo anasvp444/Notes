@@ -1,6 +1,6 @@
 # Notes
 React-django app
 
-# VGG-Server
-Notes app 
+# Simple Note App
+create your Notes  
 ![alt text](https://github.com/anasvp444/Notes/blob/main/record.gif)
